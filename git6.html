@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //REMOVE DUPLICATE VALUE/ITEM
+        //using filter()
+
+        x = [1,2,4,2,5]
+        console.log(x.filter((item, index) => x.indexOf(item) !== index)); //2    "removed duplicate value"
+        console.log(x.filter((item, index) => x.indexOf(item) === index));  //1,2,4,5         "remaining duplicate value || find duplicate value 
+        console.log([...new Set(x)]);        //1,2,4,5
+        //filter capable to find or filter all the exsiting value
+
+    </script>
+</body>
+</html>
